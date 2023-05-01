@@ -2,10 +2,10 @@
 
 1. Clone the project and build.
 2. The project is configured for a Oracle DB just adjust the credentials or reconfigure for another DB.
-3. Run the project. It will create 3 record, one for each domain A, B, C
+3. Run the project. It will create 3 records, one for each domain A, B, C
 4. Execute a POST twice to http://localhost:8080/test  (Assuming Grails starts on port 8080)
-5. The output below shows that the first POST neither A, B, or C domain is cached.
-6. The second POST shows that domain C is cached as expected but neither A or B is a cache hit.
+5. The output below shows that the first POST neither A, B, or C domain is cached as expected.
+6. The second POST shows that domain C is cached as expected but neither A or B is a cache hit which is the issue.
 
 Domains A and B extends from the Base domain.  All of three of these domains include in the mapping "cache true"
 I would expect on the second POST to the test endpoint that all 3 records would return records from the cache.
