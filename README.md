@@ -8,7 +8,7 @@
 6. The second POST shows that domain C is cached as expected but neither A or B is a cache hit which is the issue.
 
 Domains A and B extends from the Base domain.  All of three of these domains include in the mapping "cache true"
-I would expect on the second POST to the test endpoint that all 3 records would return records from the cache.
+I would expect on the second POST to the test endpoint that all 3 records would cache hits and avoid SQL queries.
 
 
 Output
