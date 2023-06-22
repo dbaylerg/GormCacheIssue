@@ -3,7 +3,7 @@
 1. Clone the project and build.
 2. The project is configured for a Oracle DB just adjust the credentials or reconfigure for another DB.
 3. Run the project. It will create 3 records, one for each domain A, B, C
-4. Execute a POST to http://localhost:8080/test to times to see the issue (Assuming Grails starts on port 8080)
+4. Execute a POST to http://localhost:8080/test two times to see the issue (Assuming Grails starts on port 8080)
 5. The output below shows that the first POST neither A, B, or C domain is cached as expected.
 6. The second POST shows that domain C is cached as expected but neither A or B is cached, which is the issue.
 
