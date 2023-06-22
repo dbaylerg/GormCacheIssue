@@ -12,8 +12,8 @@ I would expect on the second POST to the test endpoint that all 3 records would 
 
 
 Output
----------------------- First Post ------------------------------------
-
+---------------------- First Post ------------------------------------  
+  
 Hibernate: select a0_.id as id1_0_0_, a0_.version as version2_0_0_ from base a0_ where a0_.id=? and a0_.class='app.A'  
 Hibernate: select b0_.id as id1_0_0_, b0_.version as version2_0_0_ from base b0_ where b0_.id=? and b0_.class='app.B'  
 Hibernate: select c0_.id as id1_1_0_, c0_.version as version2_1_0_ from c c0_ where c0_.id=?  
@@ -30,7 +30,8 @@ Hibernate: select c0_.id as id1_1_0_, c0_.version as version2_1_0_ from c c0_ wh
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)  
 }  
 
----------------------- Second Post ------------------------------------
+---------------------- Second Post ------------------------------------  
+  
 Hibernate: select a0_.id as id1_0_0_, a0_.version as version2_0_0_ from base a0_ where a0_.id=? and a0_.class='app.A'  
 Hibernate: select b0_.id as id1_0_0_, b0_.version as version2_0_0_ from base b0_ where b0_.id=? and b0_.class='app.B'  
 2023-05-01 13:07:50.798  INFO --- [nio-8080-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {  
