@@ -11,7 +11,7 @@ Domains A and B extends from the Base domain.  All of three of these domains inc
 I would expect on the second POST to the test endpoint that all 3 records would be cache hits and avoid SQL queries.
 
 
-Output
+Output  
 ---------------------- First Post ------------------------------------  
   
 Hibernate: select a0_.id as id1_0_0_, a0_.version as version2_0_0_ from base a0_ where a0_.id=? and a0_.class='app.A'  
